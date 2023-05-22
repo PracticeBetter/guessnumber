@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  background-color: #222;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+}
+/* Header Layout */
+
+header {
+  height: 35vh;
+
+  border-style: solid;
+  border-color: #eee;
+  border-width: 0 0 0.4em 0;
+}
+
+.again-bet-cont {
+  display: flex;
+  justify-content: space-around;
+  padding: 4em;
+}
+
+.guess-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guess {
+  position: absolute;
+  top: 4.6em;
+}
+
+/* Header Style */
+
+.again {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #222;
+  background-color: #eee;
+  padding: 0.8em 1em;
+  /* text-decoration: none; */
+  font-size: 1.3rem;
+  border: none;
+}
+
+.again:hover {
+  background-color: #ccc;
+}
+
+.again:active {
+  transform: translateY(4px);
+}
+
+.guess {
+  color: #222;
+  font-size: 3.5rem;
+  padding: 0.5em 0.8em;
+  background-color: #eee;
+}
+
+/* Main Layout */
+/* Left Section Layout */
+main {
+  height: 65vh;
+
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-guess {
+  width: 13vw;
+  height: 13vh;
+  position: relative;
+  bottom: 35%;
+}
+
+.check {
+  position: relative;
+  bottom: 30%;
+}
+
+/* Left Section Style */
+.user-guess {
+  /* border-color: #eee; */
+  border: 3px solid #eee;
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 2.5rem;
+}
+.user-guess:focus {
+  outline-color: #222;
+}
+
+.check {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #222;
+  background-color: #eee;
+  padding: 0.8em 1em;
+  /* text-decoration: none; */
+  font-size: 1.3rem;
+  border: none;
+}
+
+.check:hover {
+  background-color: #ccc;
+}
+
+.check:active {
+  transform: translateY(4px);
+}
+
+/* Right Section Layout */
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-guessing {
+  position: relative;
+  bottom: 20%;
+}
+
+.scoreh3 {
+  margin-bottom: 1.5em;
+}
+
+/* Media Queries */
+
+@media (max-width: 700px) {
+  .again {
+    font-size: 1rem;
+  }
+  .between {
+    font-size: 1rem;
+  }
+  .guess {
+    font-size: 2.7rem;
+    top: 5.3em;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .again {
+    font-size: 0.8rem;
+  }
+  .between {
+    font-size: 0.8rem;
+  }
+  .guess {
+    font-size: 3rem;
+    top: 7em;
+  }
+  .title {
+    font-size: 1.8rem;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 466px) {
+  .again-bet-cont {
+    display: flex;
+    justify-content: end;
+    gap: 2em;
+    padding: 3em 2em;
+  }
+  .again {
+    font-size: 1rem;
+  }
+  .between {
+    font-size: 0.8rem;
+  }
+  .guess {
+    font-size: 3rem;
+    top: 5em;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin-top: 2em;
+  }
+  .between {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 390px) {
+  .again-bet-cont {
+    display: flex;
+    justify-content: end;
+    gap: 2em;
+    padding: 3em 2em;
+  }
+  .again {
+    font-size: 0.9rem;
+  }
+  .between {
+    font-size: 0.5rem;
+  }
+  .guess {
+    font-size: 2.5rem;
+    top: 5.2em;
+  }
+  .title {
+    font-size: 1.2rem;
+    margin-top: 2em;
+  }
+  .between {
+    flex-grow: 1;
+  }
+}
+
+/* Media Query With Height Dimensions */
+
+@media (max-width: 1024px) {
+  .user-guess {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 834px) {
+  .guess {
+    font-size: 2.8rem;
+    top: 5.2em;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-guess {
+    width: 30vw;
+    height: 13vh;
+    bottom: 25%;
+  }
+
+  .check {
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 414px) {
+  .user-guess {
+    bottom: 15%;
+  }
+
+  .check {
+    bottom: 10%;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    left: 20%;
+  }
+
+  .start-guessing {
+    bottom: 17%;
+  }
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+  .check {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.7rem;
+  }
+}
+
+/* Practice Media Query */
+
+@media (max-width: 320px) {
+  .highscoreh3 {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .highscoreh3 {
+    font-size: 0.65rem;
+  }
+}
